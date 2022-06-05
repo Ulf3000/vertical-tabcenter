@@ -1,6 +1,26 @@
-addMessageListener("tabCenterUltimate@Ulf3000:message-from-chrome", xxx);
-console.log("FRAMESCRIPT LOADED !!!!!!!!!!!!!!!!!!!");
+addMessageListener("tabCenterUltimate@Ulf3000:message-from-chrome", yyy);
+
+
+function yyy(){
+	console.log(document.readyState);
+	if (document.readyState == 'complete') {
+		
+		xxx();
+	
+	
+	}else{
+		window.onload = xxx()
+	}
+
+
+
+}
+
 function xxx(){
+
+	console.log("jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj");
+	
+
 	// if (timer == true) return;
 	// timer = true;
 	// setTimeout(function(){
